@@ -14,7 +14,8 @@ class MovieForm extends Component {
             imdbRating: '',
             director: '',
             year: '',
-            dateAdded: `${(new Date())}`,
+            // dateAdded: `${(new Date())}`,
+            dateAdded: new Date().toString(),
         };
 
         //set our initial state to state.
@@ -31,24 +32,39 @@ class MovieForm extends Component {
         });
     }
 
-    onFormSubmit = (event) => {
+    // onFormSubmit = (event) => {
 
-        //standard for onSubmits
-        event.preventDefault();
+    //     //standard for onSubmits
+    //     event.preventDefault();
 
-        //this.setState({dateAdded: new Date()});
+    //     //this.setState({dateAdded: new Date()});
     
+    //     //set the current state of our form to the handle submit
+    //     this.props.addMovie(this.state);
+    
+    //      //clear inputs by setting form to initial state
+    //     this.setState(this.initalState);
+        
+    // }
+
+    onFormSubmit = (event) => {
+        //standard code for onSubmits 
+        event.preventDefault();
+        //const newDate = new Date().toString();
+        
+        this.setState({dateAdded:new Date().toString()});
+        
         //set the current state of our form to the handle submit
         this.props.addMovie(this.state);
-    
-         //clear inputs by setting form to initial state
-        this.setState(this.initalState);
-        
-    }
+
+        //clear inputs by setting form to inital state
+        //this.initalState.date = newDate;
+        //this.setState(this.initalState);   
+    } 
 
     render() {
         //hook in data from state
-        const { title, actors, plot, imdbRating, director, year, dateAdded } = this.state;
+        const { title, actors, plot, imdbRating, director, year } = this.state;
         return (
             <form onSubmit={this.onFormSubmit}>
                 <h2>Add a New Movie Here:</h2>
@@ -98,14 +114,6 @@ class MovieForm extends Component {
                     id="year"
                     name="year"
                     value={year}
-                    onChange={this.handleChange}
-                />
-                <label htmlFor="dateAdded">Date Added:</label>
-                <input
-                    type="text"
-                    id="dateAdded"
-                    name="dateAdded"
-                    value={dateAdded}
                     onChange={this.handleChange}
                 />
                 <br/>

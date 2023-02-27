@@ -19,7 +19,7 @@ class App extends Component  {
           imdbRating: 9.2,
           director: "Francis Ford Coppola",
           year: 1972,
-          dateAdded: `${new Date()}`,
+          dateAdded: "Mon Feb 27 2023 11:58:50 GMT-0800 (Pacific Standard Time)",
         },
         {
           title: "The Shawshank Redemption",
@@ -29,7 +29,7 @@ class App extends Component  {
           imdbRating: 9.3,
           director: "Frank Darabont",
           year: 1994,
-          dateAdded: `${new Date()}`,
+          dateAdded: "Mon Feb 27 2023 11:58:50 GMT-0800 (Pacific Standard Time)",
         },
         {
           title: "The Dark Knight",
@@ -39,7 +39,7 @@ class App extends Component  {
           imdbRating: 9.0,
           director: "Christopher Nolan",
           year: 2008,
-          dateAdded: `${new Date()}`,
+          dateAdded: "Mon Feb 27 2023 11:58:50 GMT-0800 (Pacific Standard Time)",
         },
         {
           title: "Pulp Fiction",
@@ -49,7 +49,7 @@ class App extends Component  {
           imdbRating: 8.9,
           director: "Quentin Tarantino",
           year: 1994,
-          dateAdded: `${new Date()}`,
+          dateAdded: "Mon Feb 27 2023 11:58:50 GMT-0800 (Pacific Standard Time)",
         },
         {
           title: "The Lord of the Rings: The Return of the King",
@@ -59,7 +59,7 @@ class App extends Component  {
           imdbRating: 8.9,
           director: "Peter Jackson",
           year: 2003,
-          dateAdded: `${new Date()}`,
+          dateAdded: "Mon Feb 27 2023 11:58:50 GMT-0800 (Pacific Standard Time)",
         },
         {
           title: "Forrest Gump",
@@ -69,7 +69,7 @@ class App extends Component  {
           imdbRating: 8.8,
           director: "Robert Zemeckis",
           year: 1994,
-          dateAdded: `${new Date()}`,
+          dateAdded: "Mon Feb 27 2023 11:58:50 GMT-0800 (Pacific Standard Time)",
         },
         {
           title: "Inception",
@@ -79,7 +79,7 @@ class App extends Component  {
           imdbRating: 8.7,
           director: "Christopher Nolan",
           year: 2010,
-          dateAdded: `${new Date()}`,
+          dateAdded: "Mon Feb 27 2023 11:58:50 GMT-0800 (Pacific Standard Time)",
         },
         {
           title: "The Matrix",
@@ -89,7 +89,7 @@ class App extends Component  {
           imdbRating: 8.7,
           director: "Lana Wachowski, Lilly Wachowski",
           year: 1999,
-          dateAdded: `${new Date()}`,
+          dateAdded: "Mon Feb 27 2023 11:58:50 GMT-0800 (Pacific Standard Time)",
         },
         {
           title: "Schindler's List",
@@ -99,7 +99,7 @@ class App extends Component  {
           imdbRating: 8.9,
           director: "Steven Spielberg",
           year: 1993,
-          dateAdded: `${new Date()}`,
+          dateAdded: "Mon Feb 27 2023 11:58:50 GMT-0800 (Pacific Standard Time)",
         },
         {
           title: "Goodfellas",
@@ -109,7 +109,7 @@ class App extends Component  {
           imdbRating: 8.7,
           director: "Martin Scorsese",
           year: 1990,
-          dateAdded: `${new Date()}`,
+          dateAdded: "Mon Feb 27 2023 11:58:50 GMT-0800 (Pacific Standard Time)",
         },
     ]
 }
