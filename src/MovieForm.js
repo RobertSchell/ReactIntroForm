@@ -14,7 +14,7 @@ class MovieForm extends Component {
             imdbRating: '',
             director: '',
             year: '',
-            dateAdded: Date (),
+            dateAdded: `${(new Date())}`,
         };
 
         //set our initial state to state.
@@ -35,12 +35,15 @@ class MovieForm extends Component {
 
         //standard for onSubmits
         event.preventDefault();
+
+        //this.setState({dateAdded: new Date()});
     
         //set the current state of our form to the handle submit
         this.props.addMovie(this.state);
     
          //clear inputs by setting form to initial state
-        this.setState(this.initalState);   
+        this.setState(this.initalState);
+        
     }
 
     render() {
